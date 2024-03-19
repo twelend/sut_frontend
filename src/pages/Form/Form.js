@@ -13,6 +13,7 @@ const Form = ({ isForm }) => {
     const [parentName, setParentName] = useState('')
     const [date, setDate] = useState('')
     const [time, setTime] = useState('')
+    const [spetification, setSpetification] = useState('')
 
     const [phoneError, setPhoneError] = useState('Поле обязательно для заполнения')
 
@@ -72,7 +73,7 @@ const Form = ({ isForm }) => {
             return
         }
 
-        if (['7', '8', '9'].indexOf(inputNumbersValue[0]) > -1) {
+        if (['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'].indexOf(inputNumbersValue[0]) > -1) {
             if (inputNumbersValue[0] === '9') inputNumbersValue = '+' + inputNumbersValue
             let firstSymbols = (inputNumbersValue[0] === '8') ? '+7' : '+7'
             let formattedInputValue = firstSymbols + ' '
@@ -161,9 +162,38 @@ const Form = ({ isForm }) => {
                                 />
                             </div>
                             <div className={s.form__item}>
+                                <h5>Выберите напрваление</h5>
+                                <select onChange={e => setSpetification(e.target.value)} value={spetification}>
+                                    <option value='' disabled selected>
+                                        --Выберите Направление--
+                                    </option>
+                                    <option value={'Робототехника 4+'}>
+                                        Робототехника 4+
+                                    </option>
+                                    <option value={'Программирование 7+'}>
+                                        Программирование 7+
+                                    </option>
+                                    <option value={'Программирование 8+'}>
+                                        Программирование 8+
+                                    </option>
+                                    <option value={'Технический дизайн'}>
+                                        Технический дизайн  
+                                    </option>
+                                    <option value={'Начальное техническое моделирование'}>
+                                        Начальное техническое моделирование
+                                    </option>
+                                    <option value={'Основы дизайна'}>
+                                        Основы дизайна
+                                    </option>
+                                    <option value={'Проектная деятельность'}>
+                                        Проектная деятельность
+                                    </option>
+                                </select>
+                            </div>
+                            <div className={s.form__item}>
                                 <h5>Выберите половину дня</h5>
                                 <select onChange={e => setTime(e.target.value)} value={time}>
-                                    <option value={0}>
+                                    <option value='' disabled selected>
                                         --Выберите время--
                                     </option>
                                     <option value={'Утреннее'}>
@@ -177,8 +207,8 @@ const Form = ({ isForm }) => {
                         </form>
                     </div>
                 </div>
-                <div className={s.send__btn}>
-                    <button onClick={handleClick} disabled={ !name && !parentName && !email && !phoneError}>Отправить</button>
+                <div className={!name || !parentName || !email || !phone || !spetification ? s.disable : s.send__btn}>
+                    <button onClick={handleClick} disabled={ !name || !parentName || !email || !phone || !spetification}>Отправить</button>
                 </div>
             </div>
         </div>

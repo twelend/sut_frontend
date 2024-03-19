@@ -71,13 +71,25 @@ option {
     transition: ease-in-out 0.3s;
 }
 
-.send__btn button:hover{
+.send__btn button:hover {
     background: #FFC178;
     color: #000;
 }
 
-.send__btn {
+.send__btn, .disable {
     display: flex;
     justify-content: center;
     width: 100%;
+}
+
+.disable button {
+    cursor: not-allowed;
+    opacity: 0.4;
+    border: none;
+    border-radius: 10px;
+    background: #eee;
+    width: 20%;
+    color: #000000;
+    padding: 15px; 
+    transition: ease-in-out 0.3s;
 }

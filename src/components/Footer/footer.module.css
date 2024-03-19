@@ -10,14 +10,14 @@
 .map {
     display: flex;
     justify-content: center;
-    align-items: start;
+    align-items: flex-start;
     gap: 4rem;
 }
 
 .footer_container{
     display: flex;
     justify-content: space-between;
-    align-items: start;
+    align-items: flex-start;
 }
 
 .footer_map a{

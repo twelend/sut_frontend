@@ -14,8 +14,8 @@ const About = ({title, img, text, reverse}) => {
                   <h2>{title}</h2>
                   <p>{text}</p>
                 </div>
-                <hr id='reversed' />
-                <a id='reversed_link' href="/form">Подать заявку</a>
+                <hr />
+                <a href="/form">Подать заявку</a>
             </div>
             ) : 
             <div className={s.about_item_container_default}>
@@ -26,8 +26,8 @@ const About = ({title, img, text, reverse}) => {
                 <h2>{title}</h2>
                 <p>{text}</p>
                 </div>
-                <hr id='default'/>
-                <a id ='default_link' href="/form">Подать заявку</a>
+                <hr />
+                <a href="/form">Подать заявку</a>
             </div>
         }
     </div>

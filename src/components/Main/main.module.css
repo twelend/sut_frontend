@@ -1,11 +1,9 @@
 .section__padding {
     padding: 0 12rem;
 }
-
 .main a {
     color: #eee;
 }
-
 .main {
     background-color: #000;
     color: #9d9999;
@@ -28,7 +26,7 @@
     padding: 3rem 0;
     display: flex;
     justify-content: space-between;
-    align-items: start;
+    align-items: flex-start;
     margin: 0 5rem;
 }
 
@@ -71,8 +69,8 @@
 .about_item_container_default a:hover , .about_item_container_reversed a:hover {
     color: #FFC178;
 }
-
 .about_title{
+    text-align: end;
     position: relative;
     width: 550px;
     padding-bottom: 1rem;
