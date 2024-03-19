@@ -1,0 +1,38 @@
+.footer{
+    background-color: #000;
+    color: #9d9999;
+}
+
+.section__padding {
+    padding: 2rem 12rem;
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 4rem;
+}
+
+.footer_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.footer_map a{
+    color: #eee;
+}
+
+.footer_list > li:not(:first-child){
+    padding: 1rem;
+}
+
+.footer_list a {
+    color: #eee;
+    font-size: 20px;
+}
+
+.footer_list a span {
+    color: #FFC178;
+}

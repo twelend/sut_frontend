@@ -1,0 +1,227 @@
+.section__padding {
+    padding: 1rem 84px 0;
+}
+
+.header a {
+    font-size: 18px;
+    cursor: pointer;
+    color: #eee;
+    font-family: 'Tektur', sans-serif;
+}
+
+.header {
+    z-index: 999;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo img {
+    width: 80px;
+}
+
+.header__menu {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 50px;
+}
+
+.header__button button {
+    font-family: 'Tektur', sans-serif;
+    color: #eee;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+
+    cursor: pointer;
+}
+
+.contacts {
+    padding: 20px;
+    width: 200px;
+    position: absolute;
+    top: 300px;
+}
+
+.item {
+    z-index: 9999;
+    width: 130px;
+    position: relative;
+    transform: rotate(90deg);
+    /* margin: 300px 0 0 0  */
+}
+
+.rotate {
+    color: #eee;
+}
+
+.contacts p {
+    width: 200px;
+    color: #eee;
+}
+
+.fab__link {
+    cursor: pointer;
+}
+
+.fab {
+    width: 24px;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    transform: rotate(-90deg);
+}
+
+.container__contacts {
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+
+.icons a {
+    color: #eee;
+    width: 100%;
+    height: 20px;
+}
+
+.intro {
+    position: relative;
+    height: 100vh;
+    background: url("../../../public/assets/team.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.intro:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.item__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #eee
+}
+
+.content__container {
+    margin: 14em auto 0;
+}
+
+.content__container h1 {
+    line-height: 55px;
+    font-size: 60px;
+    font-weight: 400;
+}
+
+.content__text span {
+    font-weight: 700;
+}
+
+.linetext {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    margin-bottom: 28px;
+}
+
+.line {
+    width: 30px;
+    height: 2.4px;
+    background-color: #FFC178;
+}
+
+.title__text {
+    color: #FFC178;
+}
+
+.scroll_button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.scroll__link a::after {
+    display: block;
+    content: url("../../../public/arrow.svg");
+    margin-top: 8px;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    bottom: -35px;
+    transform: translate(-50%);
+
+    animation: arrowDown 2s infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes arrowDown {
+    0% {
+        bottom: -35px;
+    }
+    50% {
+        bottom: -50px;
+    }
+    100% {
+        bottom: -35px;
+    }
+}
+
+.scroll__link {
+    margin: 12em auto 0;
+}
+.scroll__link a {
+    color: #eee;
+}
+
+.header__shadow {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to bottom, transparent, #000000);
+
+}
+
+.links {
+    position: relative;
+}
+
+.links:after {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #FFC178;
+    content: "";
+    transition: width 0.3s ease-out;
+}
+
+.links:hover:after,
+.links:focus:after {
+    width: 100%;
+}
