@@ -1,10 +1,15 @@
 .section__padding {
-    padding: 2rem 20rem 0;
+    padding: 5rem 5rem 2rem;
 }
+
+.wrapper {
+    background: #000;
+    width: 100vw;
+}
+
 .container {
     background: #000;
     width: 100%;
-    height: 100vh;
     color: #eee;
 }
 .form__block{
@@ -25,6 +30,18 @@
     margin-top: 1.5rem;
 }
 
+.form_sides {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    column-gap: 25px;
+}
+.form_left{
+    width: 50%;
+}
+.form_right{
+    width: 50%;
+}
 .form form{
     display: flex;
     flex-direction: column;
@@ -34,6 +51,7 @@
 .form__item{
     width: 100%;
 }
+
 .form__item h5 {
     color: #fff;
     padding: .7rem 0;
@@ -43,6 +61,7 @@
 input, select {
     background: transparent;
     width: 100%;
+    height: 37px;
     padding: 10px;
     border: none;
     border-bottom: 1px solid #FFC178;
@@ -92,4 +111,90 @@ option {
     color: #000000;
     padding: 15px; 
     transition: ease-in-out 0.3s;
+}
+
+.error {
+    color: rgb(253, 69, 69);
+    font-size: 10px;
+}
+
+@media  screen and (max-width: 830px) {
+    .form__item h5 {
+        color: #fff;
+        padding: .5rem 0;
+        font-size: 10px;
+        width: 80%;
+    }
+
+    .form_left{
+        width: 300px;
+    }
+
+    .error {
+        color: rgb(253, 69, 69);
+        font-size: 10px;
+    }
+
+    .disable button {
+        cursor: not-allowed;
+        opacity: 0.4;
+        border: none;
+        border-radius: 10px;
+        background: #eee;
+        width: 30%;
+        color: #000000;
+        padding: 15px; 
+        transition: ease-in-out 0.3s;
+    }
+    .send__btn button{
+        border: none;
+        border-radius: 10px;
+        background: #eee;
+        width: 30%;
+        color: #000000;
+        padding: 15px;
+        cursor: pointer;    
+        transition: ease-in-out 0.3s;
+    }
+    input, select {
+        background: transparent;
+        width: 100%;
+        height: 37px;
+        padding: 10px 0;
+        border: none;
+        border-bottom: 1px solid #FFC178;
+        color: #eee;
+        text-decoration: none;
+        font-size: 14px;
+    }
+    select, input[type='date'], input[type='email']{
+        width: 100%;
+    }
+}
+
+@media  screen and (max-width: 500px) {
+    .disable button {
+        cursor: not-allowed;
+        opacity: 0.4;
+        border: none;
+        border-radius: 10px;
+        background: #eee;
+        width: 60%;
+        color: #000000;
+        padding: 15px; 
+        transition: ease-in-out 0.3s;
+    }
+    .send__btn button{
+        border: none;
+        border-radius: 10px;
+        background: #eee;
+        width: 60%;
+        color: #000000;
+        padding: 15px;
+        cursor: pointer;    
+        transition: ease-in-out 0.3s;
+    }
+    .title h1{
+        font-size: 20px;
+    }
 }

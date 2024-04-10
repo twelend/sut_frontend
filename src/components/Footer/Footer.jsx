@@ -12,7 +12,7 @@ const Footer = () => {
               <a href="https://yandex.ru/maps/44/izhevsk/?utm_medium=mapframe&utm_source=maps">Ижевск </a>
               <a href="https://yandex.ru/maps/44/izhevsk/house/ulitsa_40_let_pobedy_62/YUoYdA9jQUIAQFtsfXR0cH1hYg==/?ll=53.284509%2C56.851127&utm_medium=mapframe&utm_source=maps&z=17.86">Улица 40 лет Победы, 62</a>
             </div>
-            <iframe title="map" src="https://yandex.ru/map-widget/v1/?ll=53.284509%2C56.851127&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjIxMTY5NxJs0KDQvtGB0YHQuNGPLCDQo9C00LzRg9GA0YLRgdC60LDRjyDQoNC10YHQv9GD0LHQu9C40LrQsCwg0JjQttC10LLRgdC6LCDRg9C70LjRhtCwIDQwINC70LXRgiDQn9C-0LHQtdC00YssIDYyIgoNsiJVQhWOZ2NC&z=17.86" width="560" height="400" frameborder="1" allowfullscreen="true"></iframe></div>
+            <iframe title="map" src="https://yandex.ru/map-widget/v1/?ll=53.284509%2C56.851127&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjIxMTY5NxJs0KDQvtGB0YHQuNGPLCDQo9C00LzRg9GA0YLRgdC60LDRjyDQoNC10YHQv9GD0LHQu9C40LrQsCwg0JjQttC10LLRgdC6LCDRg9C70LjRhtCwIDQwINC70LXRgiDQn9C-0LHQtdC00YssIDYyIgoNsiJVQhWOZ2NC&z=17.86" width="560" height="400" frameBorder="1" allowFullScreen={true}></iframe></div>
           </div>
         <div>
           <div className={s.footer_links}>

@@ -112,83 +112,89 @@ const Form = ({ isForm }) => {
                     </div>
                     <div className={s.form}>
                         <form>
-                            <div className={s.form__item}>
-                                <h5>Введите ФИО ребенка</h5>
-                                <input
-                                    type="text"
-                                    placeholder="ФИО Ребенка"
-                                    value={name}
-                                    onChange={e => setName(e.target.value)}
-                                />
-                            </div>
-                            <div className={s.form__item}>
-                                <h5>Введите ФИО представителя</h5>
-                                <input
-                                    type="text"
-                                    placeholder="ФИО Родителя"
-                                    value={parentName}
-                                    onChange={e => setParentName(e.target.value)}
-                                />
-                            </div>
-                            <div className={s.form__item}>
-                                <h5>Введите номер телефона</h5>
-                                <input
-                                    name='phone'
-                                    type="tel"
-                                    placeholder="+7 (999) 999-99-99"
-                                    value={phone}
-                                    onChange={e => handleChangePhone(e)}
-                                />
-                                {
-                                    phoneError && <span className={s.error}>{phoneError}</span>
-                                }
-                            </div>
-                            <div className={s.form__item}>
-                                <h5>Введите Email</h5>
-                                <input
-                                    type="email"
-                                    placeholder="example@example.ru"
-                                    value={email}
-                                    onChange={e => setEmail(e.target.value)}
-                                />
-                            </div>
-                            <div className={s.form__item}>
-                                <h5>Введите дату рождения ребенка</h5>
-                                <input
-                                    type="date"
-                                    placeholder="01.01.2010"
-                                    value={date}
-                                    onChange={e => setDate(e.target.value)}
-                                />
-                            </div>
-                            <div className={s.form__item}>
-                                <h5>Выберите напрваление</h5>
-                                <select onChange={e => setSpetification(e.target.value)} value={spetification}>
-                                    <option value='' disabled selected>
-                                        --Выберите Направление--
-                                    </option>
-                                    <option value={'Робототехника 4+'}>
-                                        Робототехника 4+
-                                    </option>
-                                    <option value={'Программирование 7+'}>
-                                        Программирование 7+
-                                    </option>
-                                    <option value={'Программирование 8+'}>
-                                        Программирование 8+
-                                    </option>
-                                    <option value={'Технический дизайн'}>
-                                        Технический дизайн  
-                                    </option>
-                                    <option value={'Начальное техническое моделирование'}>
-                                        Начальное техническое моделирование
-                                    </option>
-                                    <option value={'Основы дизайна'}>
-                                        Основы дизайна
-                                    </option>
-                                    <option value={'Проектная деятельность'}>
-                                        Проектная деятельность
-                                    </option>
-                                </select>
+                        <div className={s.form_sides}>
+                                <div className={s.form_left}>
+                                    <div className={s.form__item}>
+                                        <h5>Введите ФИО ребенка</h5>
+                                        <input
+                                            type="text"
+                                            placeholder="ФИО Ребенка"
+                                            value={name}
+                                            onChange={e => setName(e.target.value)}
+                                        />
+                                    </div>
+                                    <div className={s.form__item}>
+                                        <h5>Введите ФИО представителя</h5>
+                                        <input
+                                            type="text"
+                                            placeholder="ФИО Родителя"
+                                            value={parentName}
+                                            onChange={e => setParentName(e.target.value)}
+                                        />
+                                    </div>
+                                    <div className={s.form__item}>
+                                        <h5>Введите номер телефона</h5>
+                                        <input
+                                            name='phone'
+                                            type="tel"
+                                            placeholder="+7 (999) 999-99-99"
+                                            value={phone}
+                                            onChange={e => handleChangePhone(e)}
+                                        />
+                                        {
+                                            phoneError && <span className={s.error}>{phoneError}</span>
+                                        }
+                                    </div>
+                                </div>
+                                <div className={s.form_right}>
+                                    <div className={s.form__item}>
+                                        <h5>Введите Email</h5>
+                                        <input
+                                            type="email"
+                                            placeholder="example@example.ru"
+                                            value={email}
+                                            onChange={e => setEmail(e.target.value)}
+                                        />
+                                    </div>
+                                    <div className={s.form__item}>
+                                        <h5>Введите дату рождения ребенка</h5>
+                                        <input
+                                            type="date"
+                                            placeholder="01.01.2010"
+                                            value={date}
+                                            onChange={e => setDate(e.target.value)}
+                                        />
+                                    </div>
+                                    <div className={s.form__item}>
+                                        <h5>Выберите напрваление</h5>
+                                        <select onChange={e => setSpetification(e.target.value)} value={spetification}>
+                                            <option value='' disabled selected>
+                                                --Выберите Направление--
+                                            </option>
+                                            <option value={'Робототехника 4+'}>
+                                                Робототехника 4+
+                                            </option>
+                                            <option value={'Программирование 7+'}>
+                                                Программирование 7+
+                                            </option>
+                                            <option value={'Программирование 8+'}>
+                                                Программирование 8+
+                                            </option>
+                                            <option value={'Технический дизайн'}>
+                                                Технический дизайн  
+                                            </option>
+                                            <option value={'Начальное техническое моделирование'}>
+                                                Начальное техническое моделирование
+                                            </option>
+                                            <option value={'Основы дизайна'}>
+                                                Основы дизайна
+                                            </option>
+                                            <option value={'Проектная деятельность'}>
+                                                Проектная деятельность
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
                             </div>
                             <div className={s.form__item}>
                                 <h5>Выберите половину дня</h5>

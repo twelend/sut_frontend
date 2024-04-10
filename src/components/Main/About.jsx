@@ -3,7 +3,7 @@ import s from './main.module.css'
 
 const About = ({title, img, text, reverse}) => {
   return (
-    <div>
+    <div className={s.about_item_wrapper}>
         {
             reverse ? (
             <div className={s.about_item_container_reversed + ' ' + s.reverse}>

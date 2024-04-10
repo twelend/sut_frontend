@@ -52,7 +52,7 @@ const Main = () => {
         </div>
       </div>
       <div id='contests' className={s.card}>
-        <h1>Конкурсы</h1>
+        
       </div>
       <div id='contacts' className={s.card}>
         <h1>Контакты</h1>

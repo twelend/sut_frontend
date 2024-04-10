@@ -2,7 +2,7 @@ import React from 'react'
 import s from './header.module.css'
 import { Link } from 'react-router-dom'
 
-const Nav = ({ isForm }) => {
+const Nav = ({ isForm, setActive, active }) => {
   return (
     <div>
       <header className={s.header + ' ' + s.section__padding}>
@@ -33,6 +33,9 @@ const Nav = ({ isForm }) => {
                 {/* Button */}
                 <div className={s.header__button}>
                   <button><Link to="/form">Отправить заявку</Link></button>
+                </div>
+                <div className={s.burger_menu} onClick={() => setActive(!active)}>
+                  <span />
                 </div>
               </>
               : null

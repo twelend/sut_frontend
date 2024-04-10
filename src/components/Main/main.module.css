@@ -8,7 +8,6 @@
     background-color: #000;
     color: #9d9999;
 }
-
 .card {
     width: 100%;
 }
@@ -29,7 +28,6 @@
     align-items: flex-start;
     margin: 0 5rem;
 }
-
 
 .about_item_container_default a, .about_item_container_reversed a {
     color: #eee;
@@ -81,6 +79,7 @@
     font-weight: 400;
 }
 
+
 @keyframes getrequest {
     0% {
         background-color: #fff;
@@ -98,4 +97,186 @@
         background-color: #FFC178;
     }
     
+}
+
+@media screen and (max-width: 1800px) {
+    .section__padding {
+        padding: 0 10rem;
+    }
+    .about__text h1{
+        font-size: 25px;
+    }
+    .about_img img {
+        width: 500px;
+        border-radius: 5px;
+    }
+
+    .about_title{
+        text-align: end;
+        position: relative;
+        padding-bottom: 1rem;
+    }
+
+    .about_title h2 {
+        color: #FFC178;
+        font-size: 30px;
+        font-weight: 400;
+    }
+
+    .about_item_container_default hr, .about_item_container_reversed hr {
+        width: 45%;
+        height: 1px;
+        background-color: #eee;
+        border: none;
+        position: absolute;
+        bottom: 30px;
+        right: 0;
+        animation: getrequest 4s ease-in-out infinite;
+    }
+
+    @media screen and (max-width: 1570px) {
+        .section__padding {
+            padding: 0 5rem;
+        }
+    }
+    @media screen and (max-width: 1400px) {
+        .section__padding {
+            padding: 0 2rem;
+        }
+        .about_item_container_default hr, .about_item_container_reversed hr {
+            width: 40%;
+            height: 1px;
+            background-color: #eee;
+            border: none;
+            position: absolute;
+            bottom: 30px;
+            right: 0;
+            animation: getrequest 4s ease-in-out infinite;
+        }
+    }
+    @media screen and (max-width: 1300px) {
+        .about_img img {
+            width: 450px;
+            border-radius: 5px;
+        }
+        .section__padding {
+            padding: 0 1rem;
+        }
+        .about_item_container_default hr, .about_item_container_reversed hr {
+            width: 40%;
+            height: 1px;
+            background-color: #eee;
+            border: none;
+            position: absolute;
+            bottom: 30px;
+            right: 0;
+            animation: getrequest 4s ease-in-out infinite;
+        }
+    }
+    @media screen and (max-width: 1000px) {
+        .about_img img {
+            width: 450px;
+            border-radius: 5px;
+        }
+        .section__padding {
+            padding: 0 1rem;
+        }
+        .about_item_container_default hr, .about_item_container_reversed hr {
+            width: 100%;
+            height: 1px;
+            background-color: #eee;
+            border: none;
+            position: absolute;
+            bottom: 30px;
+            right: 0;
+            animation: getrequest 4s ease-in-out infinite;
+        }
+
+        .about_item_container_default, .about_item_container_reversed {
+            position: relative;
+            padding: 3rem 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column-reverse;
+            margin: 0 5rem;
+        }
+        .about_title{
+            text-align: center;
+            position: relative;
+            padding-bottom: 1rem;
+        }
+        .about_item_container_default a, .about_item_container_reversed a {
+            color: #eee;
+            font-size: 15px;
+            cursor: pointer;
+            position: absolute;
+            bottom: 30px;
+            right: 0;
+            transition: ease-in-out .2s;
+        }
+    }
+    @media screen and (max-width: 600px) {
+        .about_item_container_default, .about_item_container_reversed {
+            position: relative;
+            padding: 3rem 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column-reverse;
+            margin: 0 5rem;
+        }
+        .about__text h1 {
+            text-align: center;
+            padding: 70px 0 0 0;
+            color: #fff;
+            font-size: 20px;
+            font-weight: 400;
+        }
+        .about_title p {
+            font-size: 14px;
+            width: 70vw;
+            margin: 0 auto;
+            overflow:unset;
+        }
+        .about_title h2 {
+            font-size: 20px;
+            width: 70vw;
+            margin: 0 auto;
+        }
+        .about_img img {
+            width: 300px;
+            border-radius: 5px;
+        }
+        .about_item_container_default, .about_item_container_reversed {
+            position: relative;
+            padding: 3rem 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column-reverse;
+            margin: 0;
+        }
+
+        .about_item_wrapper {
+            width: 100%;
+        }
+        .card {
+            overflow: hidden;
+            position: relative;
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+    @media screen and (max-width: 400px) {
+        .about_img img {
+            width: 250px;
+            border-radius: 5px;
+        }
+        .about_title h2 {
+            font-size: 18px;
+            width: 70vw;
+            margin: 0 auto;
+        }
+    }
 }
